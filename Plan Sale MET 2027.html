@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plan Sale MET 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2FAFF;--surface:#fff;--text:#0B2A4A;--muted:#4D6A87;--sky:#12A8FF;--deep:#0A6FD6;--aqua:#17D0E6;--tint:#E3F4FF;--line:#D3E9F9;--hero1:#0A6FD6;--hero2:#0E96F2;--warn:#B45309;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#06192E;--surface:#0C2745;--text:#E6F3FF;--muted:#9CB7D1;--sky:#3CB9FF;--deep:#6CC8FF;--tint:#0F3158;--line:#1B3F66;--warn:#F5B35C}}
+:root[data-theme="dark"]{--bg:#06192E;--surface:#0C2745;--text:#E6F3FF;--muted:#9CB7D1;--sky:#3CB9FF;--deep:#6CC8FF;--tint:#0F3158;--line:#1B3F66;--warn:#F5B35C}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.65 "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hero1);z-index:20}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:15;background:var(--hero1);color:#fff}
+.nav-in{max-width:1080px;margin:0 auto;padding:12px 20px;display:flex;gap:20px;align-items:center;overflow-x:auto;white-space:nowrap}
+.nav b{font-weight:800;margin-right:8px}
+.nav a{color:#fff;text-decoration:none;font-weight:500;font-size:14px;opacity:.9}
+.nav a:hover,.nav a:focus-visible{opacity:1;text-decoration:underline;outline:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2) 70%,#2BC4F0);color:#fff;padding:56px 0 40px}
+.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.12;margin:0 0 16px;font-weight:800;max-width:16em}
+.hero p{max-width:40em;margin:0 0 28px;font-size:18px;opacity:.95}
+.kpis{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px}
+.kpi{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);border-radius:14px;padding:12px 18px;min-width:150px}
+.kpi strong{display:block;font-size:26px;font-weight:800;line-height:1.2}
+.kpi span{font-size:13px;opacity:.92}
+.chart{background:#fff;color:#0B2A4A;--muted:#4D6A87;border-radius:18px;padding:20px 20px 12px;box-shadow:0 10px 30px rgba(3,60,120,.25)}
+.chart h2{margin:0 0 4px;font-size:18px}
+.chart small{color:var(--muted)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0 4px;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+svg{width:100%;height:auto;display:block}
+section{padding:52px 0 8px}
+h2.t{font-size:clamp(24px,3.4vw,34px);margin:0 0 6px;color:var(--deep);font-weight:800;line-height:1.2}
+.lead{color:var(--muted);max-width:44em;margin:0 0 24px}
+h3{font-size:19px;margin:30px 0 10px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:18px 0}
+.stat{border-left:5px solid var(--sky);background:var(--surface);padding:14px 16px;border-radius:0 12px 12px 0}
+.stat strong{display:block;font-size:24px;color:var(--deep);font-weight:800;line-height:1.25}
+.stat span{font-size:14px;color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.pillar{background:var(--surface);border-radius:16px;padding:22px;border-top:6px solid var(--sky)}
+.pillar:nth-child(2){border-top-color:var(--aqua)}
+.pillar:nth-child(3){border-top-color:var(--deep)}
+.pillar h3{margin:0 0 6px}
+.pillar ul{margin:8px 0 0;padding-left:18px}
+.tw{overflow-x:auto;margin:14px 0;border-radius:12px;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th{background:var(--tint);text-align:left;font-weight:700;color:var(--text)}
+th,td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.n,th.n{text-align:right;white-space:nowrap}
+tr.hl td{background:var(--tint);font-weight:700}
+.note{background:var(--tint);border-radius:12px;padding:14px 18px;margin:16px 0}
+.note.warn{border-left:5px solid var(--warn)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card{background:var(--surface);border-radius:16px;padding:20px;border:1px solid var(--line)}
+.tag{display:inline-block;background:var(--sky);color:#00263F;font-weight:700;font-size:13px;border-radius:999px;padding:2px 12px;margin-bottom:8px}
+footer{margin-top:56px;background:var(--hero1);color:#fff;padding:28px 0 36px;font-size:14px}
+footer a{color:#fff}
+.src{font-size:14px;color:var(--muted)}
+.fx{background:var(--tint);border-left:5px solid var(--sky);border-radius:0 12px 12px 0;padding:12px 16px;margin:10px 0;font-weight:600;overflow-x:auto}
+</style>
+</head>
+<body>
+<header class="nav"><div class="nav-in"><b>Plan Sale MET 2027</b>
+<a href="#tong-quan">Tổng quan</a><a href="#thi-truong">Thị trường</a><a href="#san-pham">Sản phẩm</a><a href="#phe-khach">Phễu khách</a><a href="#mua-vu">Mùa vụ</a><a href="#kpi">KPI</a><a href="#nhan-su">Phân công</a><a href="#thu-nhap">Thu nhập</a><a href="#rui-ro">Rủi ro</a></div></header>
+
+<main>
+<div class="hero" id="tong-quan"><div class="wrap">
+<h1>Plan Sale MET 2027</h1>
+<p>Kế hoạch kinh doanh năm 2027 của team Sale: tăng trưởng doanh thu theo mùa từ tour Indonesia (tháng 4–10), duy trì doanh thu nền từ Visa và Fast Track, bán chéo nhóm sản phẩm Supporting trên mạng lưới đại lý hiện hữu.</p>
+<div class="kpis">
+<div class="kpi"><strong>703k USD</strong><span>Doanh thu mục tiêu</span></div>
+<div class="kpi"><strong>83,1k USD</strong><span>Lợi nhuận gộp (GP)</span></div>
+<div class="kpi"><strong>29,3k USD</strong><span>Doanh thu/sale/tháng (sàn 20k)</span></div>
+<div class="kpi"><strong>56,5k lượt</strong><span>Tiếp cận B2C cần đạt trong năm</span></div>
+</div>
+<div class="chart"><h2>Doanh thu theo tháng của cả team (nghìn USD)</h2><small>Indonesia chiếm đỉnh T5–T8, Visa và Fast Track nhô lên quanh Tết và T3–T4</small>
+<div class="legend"><span><i style="background:#0A6FD6"></i>Indonesia</span><span><i style="background:#17D0E6"></i>Visa + Fast Track</span><span><i style="background:#9ED8FF"></i>Supporting</span></div>
+<svg id="bars" viewBox="0 0 720 260" role="img" aria-label="Biểu đồ cột chồng doanh thu theo tháng 2027 của team"></svg></div>
+</div></div>
+
+<section id="thi-truong"><div class="wrap">
+<h2 class="t">Tổng quan thị trường</h2>
+<p class="lead">Nhu cầu du lịch outbound của thị trường Việt Nam tăng trưởng mạnh; hai thị trường mục tiêu của team đều ghi nhận tín hiệu tích cực.</p>
+<div class="stats">
+<div class="stat"><strong>4,06 triệu lượt</strong><span>Người Việt đi nước ngoài 6 tháng đầu 2025, tăng 53,9% (Tổng cục Thống kê)</span></div>
+<div class="stat"><strong>678.500 lượt</strong><span>Khách Việt đến Nhật năm 2025, tăng 9,2%, kỷ lục năm thứ ba liên tiếp (JNTO)</span></div>
+<div class="stat"><strong>92.000 lượt</strong><span>Khách Việt đến Nhật tháng 3/2026, tăng 43,5% nhờ mùa hoa anh đào</span></div>
+<div class="stat"><strong>2–3 chuyến/năm</strong><span>Tần suất đi của người Việt; Gen Y sẵn sàng chi 10–15 triệu/chuyến (Vietnam Report)</span></div>
+</div>
+<h3>Visa và Fast Track: Nhật là thị trường lớn nhất</h3>
+<div class="tw"><table><tr><th>Thị trường</th><th>Tín hiệu</th><th>Hướng làm</th></tr>
+<tr><td>Nhật Bản</td><td>Khoảng 80% khách đi lần đầu chọn tuyến Tokyo – Phú Sĩ – Kyoto – Osaka; JNTO nhắm 2 triệu khách Việt vào 2030 và hỗ trợ 50% chi phí quảng bá cho doanh nghiệp đủ điều kiện</td><td>Ưu tiên số 1, đẩy mạnh T1–T4</td></tr>
+<tr><td>Đài Loan</td><td>Bốn tháng đầu 2025 gần như đi ngang (114.000 so với 113.000 lượt); khách trẻ, nhạy giá</td><td>Bán Fast Track kèm visa và tour, không cạnh tranh giá</td></tr>
+<tr><td>Mỹ, Canada</td><td>Chưa có số liệu lượt khách trong nghiên cứu này</td><td>Cần đào tạo hồ sơ, bổ sung số liệu</td></tr></table></div>
+<h3>Indonesia: thị trường ngách, đường bay mở rộng</h3>
+<div class="two">
+<div class="card"><span class="tag">Kết nối</span><p style="margin:0">Vietnam Airlines bay thẳng TP.HCM – Bali từ 1/6/2025 (4 chuyến/tuần, dự kiến lên hằng ngày từ tháng 7/2025). AirAsia mở đường Bali – Đà Nẵng từ 20/3/2026.</p></div>
+<div class="card"><span class="tag">Nhu cầu</span><p style="margin:0">Bali nằm trong nhóm 5 điểm đến người Việt tìm kiếm nhiều nhất cho kỳ nghỉ Quốc khánh 2025 (Agoda). Mùa đặt tour outbound mạnh vào dịp 30/4 và mùa hè, khớp mùa Indonesia của team.</p></div></div>
+<h3>Năng lực thực tế của MET</h3>
+<div class="tw"><table><tr><th>Chỉ số</th><th class="n">2025</th><th class="n">2026 (đến 23/9)</th></tr>
+<tr><td>Doanh thu</td><td class="n">729k USD</td><td class="n">820k USD</td></tr>
+<tr><td>Lợi nhuận gộp</td><td class="n">51,0k USD</td><td class="n">46,0k USD</td></tr>
+<tr><td>Biên gộp</td><td class="n">7,0%</td><td class="n">5,6%</td></tr>
+<tr><td>Biên Indonesia / Sin-Mal / FIT</td><td class="n">8,9% / 3,7% / 14,4%</td><td class="n">11,1% / 1,9% / 15,2%</td></tr></table></div>
+<div class="note warn"><b>Doanh thu tăng nhưng biên gộp suy giảm.</b> Hai đoàn Sin-Mal quy mô lớn trong tháng 6/2026 (khoảng 515k USD doanh thu) chỉ đạt biên khoảng 1,7%. Mức độ tập trung khách hàng cao: Petro Travel chiếm khoảng 79% doanh thu FIT 2026; số đại lý Sin-Mal phát sinh đơn giảm từ 14 (2025) xuống 5 (2026).</div>
+</div></section>
+
+<section id="san-pham"><div class="wrap">
+<h2 class="t">Cơ cấu sản phẩm 2027</h2>
+<p class="lead">Kế hoạch tập trung vào ba nhóm sản phẩm sau.</p>
+<div class="grid3">
+<div class="pillar"><h3>Seasonal Core</h3><b>Indonesia: Bromo – Bali – Komodo</b><ul><li>Tạo khác biệt, xây sản phẩm riêng</li><li>Phát triển doanh thu B2C theo mùa T4–T10</li><li>Khách 24–35 tuổi, nhóm 4–8 người, thợ lặn, CLB trekking</li></ul></div>
+<div class="pillar"><h3>Year-round Core</h3><b>Visa + Fast Track</b><ul><li>Nhu cầu thường xuyên, tăng tần suất booking</li><li>Giai đoạn đầu: Nhật, Đài, Mỹ, Canada</li><li>Schengen, Úc để giai đoạn sau; có khách vẫn bán song song</li></ul></div>
+<div class="pillar"><h3>Supporting</h3><b>Sin-Mal FIT & Landtour, dịch vụ lẻ, khách sạn + vé máy bay, tour trọn gói từ đối tác</b><ul><li>Mở rộng danh mục, bán chéo</li><li>Tận dụng nguồn lực và mạng lưới đại lý hiện có</li></ul></div>
+</div>
+<h3>Kế hoạch theo sản phẩm (USD)</h3>
+<div class="tw"><table><tr><th>Sản phẩm</th><th>Khối lượng</th><th class="n">Doanh thu</th><th class="n">GP</th><th class="n">Biên</th></tr>
+<tr><td>Indonesia</td><td>444 khách (~74 đoàn × 6 khách), GP 45 USD/khách</td><td class="n">146,5k</td><td class="n">20,0k</td><td class="n">13,6%</td></tr>
+<tr><td>Visa</td><td>270 hồ sơ, GP 30 USD/hồ sơ</td><td class="n">16,2k</td><td class="n">8,1k</td><td class="n">50%</td></tr>
+<tr><td>Fast Track</td><td>1.200 lượt, GP 10 USD/lượt</td><td class="n">31,2k</td><td class="n">12,0k</td><td class="n">38,5%</td></tr>
+<tr><td>Sin-Mal FIT & Landtour</td><td>~60 đoàn</td><td class="n">333,3k</td><td class="n">15,0k</td><td class="n">4,5%</td></tr>
+<tr><td>Khách sạn + vé máy bay</td><td>Giữ đại lý lớn, thêm đại lý mới</td><td class="n">160,0k</td><td class="n">24,0k</td><td class="n">15%</td></tr>
+<tr><td>Dịch vụ lẻ + tour trọn gói đối tác</td><td>~160 đơn</td><td class="n">16,0k</td><td class="n">4,0k</td><td class="n">25%</td></tr>
+<tr class="hl"><td>Tổng</td><td></td><td class="n">703k</td><td class="n">83,1k</td><td class="n">11,8%</td></tr></table></div>
+<div class="note">Nhóm Supporting vẫn đóng góp trên 50% GP năm 2027 do đây là mảng đã có khối lượng vận hành ổn định; hai nhóm Core là hướng chuyển dịch cơ cấu theo lộ trình.</div>
+</div></section>
+
+<section id="phe-khach"><div class="wrap">
+<h2 class="t">Phễu khách hàng và lượt tiếp cận mục tiêu</h2>
+<p class="lead">Quy mô tiếp cận được suy ngược từ chỉ tiêu GP theo tỷ lệ chuyển đổi giả định. Các tỷ lệ sẽ được hiệu chỉnh theo dữ liệu vận hành thực tế sau quý đầu tiên.</p>
+<div class="stats">
+<div class="stat"><strong>56.500 lượt/năm</strong><span>Tiếp cận B2C (Indonesia và Visa), khoảng 4.700 lượt/tháng, chủ yếu qua kênh số và cộng đồng</span></div>
+<div class="stat"><strong>1.388 lead</strong><span>Đầu mối quan tâm: 617 cho Indonesia, 771 cho Visa</span></div>
+<div class="stat"><strong>4.600 khách nền</strong><span>Khách hiện hữu làm đầu vào bán kèm Fast Track và dịch vụ lẻ</span></div>
+<div class="stat"><strong>~3.700 lượt chốt</strong><span>Tổng khách và lượt dịch vụ cả năm trên 6 nhóm sản phẩm</span></div>
+</div>
+<div class="tw"><table><tr><th>Sản phẩm</th><th>Quy mô tiếp cận</th><th>Lead / yêu cầu</th><th>Chốt</th><th class="n">Doanh thu</th><th class="n">GP</th></tr>
+<tr><td>Indonesia</td><td>30.800 lượt tiếp cận</td><td>617 đầu mối (2%)</td><td>74 đoàn (12%), 444 khách</td><td class="n">146,5k</td><td class="n">20,0k</td></tr>
+<tr><td>Visa</td><td>25.700 lượt tiếp cận</td><td>771 lead (3%)</td><td>270 hồ sơ (35%)</td><td class="n">16,2k</td><td class="n">8,1k</td></tr>
+<tr><td>Fast Track</td><td>3.000 khách nền (Visa, tour, FIT)</td><td>Bán kèm trong tư vấn</td><td>1.200 lượt (40%)</td><td class="n">31,2k</td><td class="n">12,0k</td></tr>
+<tr><td>Sin-Mal FIT & Landtour</td><td>Chăm sóc 40 đại lý</td><td>240 báo giá</td><td>60 đoàn (25%), 1.320 khách</td><td class="n">333,3k</td><td class="n">15,0k</td></tr>
+<tr><td>Khách sạn + vé máy bay</td><td>Tối thiểu 8 đại lý hoạt động</td><td>800 yêu cầu</td><td>320 đơn (40%)</td><td class="n">160,0k</td><td class="n">24,0k</td></tr>
+<tr><td>Dịch vụ lẻ + tour trọn gói đối tác</td><td>1.600 khách nền</td><td>Bán kèm trong tư vấn</td><td>160 đơn (10%)</td><td class="n">16,0k</td><td class="n">4,0k</td></tr></table></div>
+<p class="src">Đơn vị doanh thu và GP: USD. Chuỗi chuyển đổi B2C: lượt tiếp cận, lead, chốt. Nhóm B2B tính theo đại lý, báo giá và đơn chốt.</p>
+</div></section>
+
+<section id="mua-vu"><div class="wrap">
+<h2 class="t">Phân bổ theo mùa</h2>
+<div class="tw"><table><tr><th>Giai đoạn</th><th>Trọng tâm</th></tr>
+<tr><td>T2 – T3</td><td>Hoàn thiện chương trình và giá Indonesia, mở bán sớm, liên hệ CLB trekking và chạy bộ</td></tr>
+<tr><td>T4 – T10 (cao điểm T5 – T8)</td><td>Indonesia là nguồn doanh thu chính, chỉ tập trung đúng tệp khách mục tiêu; Visa và Fast Track chạy nền. T5–T8 cần khoảng 80 khách/tháng (13 đoàn)</td></tr>
+<tr><td>T11 – T3</td><td>Dồn lực cho Visa và Fast Track đón Tết và mùa hoa anh đào; Sin-Mal FIT và Landtour bán chéo mùa mua sắm, lễ hội cuối năm</td></tr></table></div>
+<h3>Phân bổ lượng khách theo tháng</h3>
+<div class="tw"><table><tr><th>Tháng</th><th class="n">Indonesia (khách)</th><th class="n">Visa (hồ sơ)</th><th class="n">Fast Track (lượt)</th><th class="n">Sin-Mal (khách)</th><th class="n">FIT + dịch vụ lẻ (đơn)</th><th class="n">Tổng lượt</th><th class="n">Tiếp cận B2C cần có</th></tr>
+<tr><td>T1</td><td class="n">0</td><td class="n">38</td><td class="n">168</td><td class="n">110</td><td class="n">40</td><td class="n">356</td><td class="n">3.598</td></tr>
+<tr><td>T2 – T3 (mỗi tháng)</td><td class="n">0</td><td class="n">32</td><td class="n">144</td><td class="n">110</td><td class="n">40</td><td class="n">326</td><td class="n">3.084</td></tr>
+<tr><td>T4</td><td class="n">44</td><td class="n">27</td><td class="n">120</td><td class="n">110</td><td class="n">40</td><td class="n">341</td><td class="n">5.650</td></tr>
+<tr class="hl"><td>T5 – T8 (mỗi tháng)</td><td class="n">80</td><td class="n">14</td><td class="n">62</td><td class="n">110</td><td class="n">40</td><td class="n">306</td><td class="n">6.872</td></tr>
+<tr><td>T9</td><td class="n">44</td><td class="n">14</td><td class="n">62</td><td class="n">110</td><td class="n">40</td><td class="n">270</td><td class="n">4.408</td></tr>
+<tr><td>T10</td><td class="n">36</td><td class="n">14</td><td class="n">62</td><td class="n">110</td><td class="n">40</td><td class="n">261</td><td class="n">3.792</td></tr>
+<tr><td>T11</td><td class="n">0</td><td class="n">24</td><td class="n">108</td><td class="n">110</td><td class="n">40</td><td class="n">282</td><td class="n">2.313</td></tr>
+<tr><td>T12</td><td class="n">0</td><td class="n">32</td><td class="n">144</td><td class="n">110</td><td class="n">40</td><td class="n">326</td><td class="n">3.084</td></tr>
+<tr class="hl"><td>Cả năm</td><td class="n">444</td><td class="n">270</td><td class="n">1.200</td><td class="n">1.320</td><td class="n">480</td><td class="n">3.714</td><td class="n">56.500</td></tr></table></div>
+<p class="src">Lượng khách Indonesia dồn vào T5–T8 (72% cả năm); Visa và Fast Track đạt đỉnh quanh Tết (T1) và mùa hoa anh đào (T3–T4); nhóm Supporting phân bổ đều. Lượt tiếp cận cần triển khai sớm hơn thời điểm chốt khoảng 1–2 tháng.</p>
+<h3>Kênh bán</h3>
+<div class="two">
+<div class="card"><span class="tag">Chủ động</span><p style="margin:0">CLB trekking, CLB chạy bộ, cộng đồng thợ lặn bán theo đoàn; bán chéo từ chính khách visa và khách tour, không tốn phí marketing riêng.</p></div>
+<div class="card"><span class="tag">Nền</span><p style="margin:0">Mạng lưới đại lý hiện có giữ khối lượng Sin-Mal, FIT và tour trọn gói đối tác. Fanpage, Zalo OA, TikTok và giới thiệu khách cũ cần team xác nhận.</p></div></div>
+</div></section>
+
+<section id="kpi"><div class="wrap">
+<h2 class="t">KPI cả năm</h2>
+<p class="lead">Hệ thống KPI được xây dựng theo cây công thức, cho phép xác định chính xác khâu gây lệch kế hoạch. Ngưỡng tối thiểu: 20k USD doanh thu/sale/tháng, đồng thời theo dõi lợi nhuận gộp (GP).</p>
+<div class="tw"><table><tr><th>Mức</th><th class="n">Doanh thu team</th><th class="n">Mỗi sale/tháng</th><th class="n">GP team</th></tr>
+<tr><td>Sàn</td><td class="n">480k</td><td class="n">20k</td><td class="n">56,7k</td></tr>
+<tr class="hl"><td>Mục tiêu</td><td class="n">703k</td><td class="n">29,3k</td><td class="n">83,1k</td></tr>
+<tr><td>Vượt</td><td class="n">850k</td><td class="n">35,4k</td><td class="n">100k</td></tr>
+<tr><td>Bứt phá</td><td class="n">1.000k</td><td class="n">41,7k</td><td class="n">120k</td></tr></table></div>
+<h3>Cây công thức KPI</h3>
+<div class="fx">Doanh thu = Σ theo sản phẩm (Số khách hoặc lượt chốt × Giá bán bình quân)</div>
+<div class="fx">Số khách chốt = Lượt tiếp cận × Tỷ lệ lead × Tỷ lệ chốt × Quy mô đoàn</div>
+<div class="fx">GP = Doanh thu × Biên GP</div>
+<div class="tw"><table><tr><th>Sản phẩm</th><th>Công thức GP</th><th>Thay số (USD/năm)</th></tr>
+<tr><td>Indonesia</td><td>Tiếp cận × Tỷ lệ lead × Tỷ lệ chốt × Khách/đoàn × Giá/khách × Biên</td><td>30.800 × 2% × 12% × 6 × 330 × 13,6% = 20,0k</td></tr>
+<tr><td>Visa</td><td>Tiếp cận × Tỷ lệ lead × Tỷ lệ chốt × Phí dịch vụ × Biên</td><td>25.700 × 3% × 35% × 60 × 50% = 8,1k</td></tr>
+<tr><td>Fast Track</td><td>Khách nền × Tỷ lệ bán kèm × GP/lượt</td><td>3.000 × 40% × 10 = 12,0k</td></tr>
+<tr><td>Sin-Mal FIT & Landtour</td><td>Báo giá × Tỷ lệ chốt × Khách/đoàn × Giá/khách × Biên</td><td>240 × 25% × 22 × 252,5 × 4,5% = 15,0k</td></tr>
+<tr><td>Khách sạn + vé máy bay</td><td>Yêu cầu × Tỷ lệ chốt × Giá trị đơn × Biên</td><td>800 × 40% × 500 × 15% = 24,0k</td></tr>
+<tr><td>Dịch vụ lẻ + trọn gói đối tác</td><td>Khách nền × Tỷ lệ bán kèm × Giá trị đơn × Biên</td><td>1.600 × 10% × 100 × 25% = 4,0k</td></tr></table></div>
+<h3>Chẩn đoán lệch kế hoạch</h3>
+<p class="src">Theo dõi hằng tháng theo lũy kế. Xanh: đạt từ 100% kế hoạch; Vàng: 85–99%; Đỏ: dưới 85%. Hai tháng liên tiếp ở mức Đỏ kích hoạt họp điều chỉnh kế hoạch.</p>
+<div class="tw"><table><tr><th>Biểu hiện</th><th>Chỉ số kiểm tra</th><th>Ngưỡng cảnh báo</th><th>Hành động</th></tr>
+<tr><td>Thiếu khách</td><td>Lượt tiếp cận so với kế hoạch tháng</td><td>Dưới 85%</td><td>Tăng cường kênh, kích hoạt CLB và cộng đồng</td></tr>
+<tr><td>Có tiếp cận nhưng ít lead</td><td>Tỷ lệ lead</td><td>Indonesia dưới 1,5%; Visa dưới 2,5%</td><td>Rà soát thông điệp, nội dung và kênh</td></tr>
+<tr><td>Có lead nhưng ít chốt</td><td>Tỷ lệ chốt</td><td>Indonesia dưới 9%; Visa dưới 28%; Sin-Mal dưới 20%</td><td>Rà soát quy trình tư vấn, thời gian phản hồi, báo giá</td></tr>
+<tr><td>Đoàn nhỏ, giá thấp</td><td>Khách/đoàn, giá bán bình quân</td><td>Indonesia dưới 5 khách/đoàn hoặc dưới 300 USD/khách</td><td>Điều chỉnh chính sách ghép đoàn và giá</td></tr>
+<tr><td>Đạt doanh thu, hụt GP</td><td>Biên GP</td><td>Sin-Mal dưới 3%; Indonesia dưới 8%; FIT dưới 10%</td><td>Kiểm soát giá vốn, duyệt báo giá trước khi chốt</td></tr>
+<tr><td>Bán kèm thấp</td><td>Tỷ lệ bán kèm Fast Track</td><td>Dưới 32%</td><td>Bổ sung bước đề xuất vào quy trình tư vấn</td></tr></table></div>
+<h3>Độ nhạy của GP</h3>
+<div class="tw"><table><tr><th>Sản phẩm</th><th class="n">GP team giảm nếu một yếu tố giảm 20%</th><th class="n">Mỗi 1 điểm % biên</th></tr>
+<tr><td>Indonesia</td><td class="n">4,0k</td><td class="n">1,5k</td></tr>
+<tr><td>Visa</td><td class="n">1,6k</td><td class="n">0,2k</td></tr>
+<tr><td>Fast Track</td><td class="n">2,4k</td><td class="n">0,3k</td></tr>
+<tr class="hl"><td>Sin-Mal FIT & Landtour</td><td class="n">3,0k</td><td class="n">3,3k</td></tr>
+<tr><td>Khách sạn + vé máy bay</td><td class="n">4,8k</td><td class="n">1,6k</td></tr>
+<tr><td>Dịch vụ lẻ + trọn gói đối tác</td><td class="n">0,8k</td><td class="n">0,2k</td></tr></table></div>
+<p class="src">Sin-Mal nhạy nhất với biên: biên giảm từ 4,5% xuống 3,5% làm mất khoảng 3,3k GP, tương đương 4% GP của team.</p>
+<h3>Chỉ tiêu vận hành</h3>
+<div class="tw"><table><tr><th>Nhóm</th><th>Chỉ tiêu</th></tr>
+<tr><td>Indonesia</td><td>Biên mỗi đoàn từ 8% trở lên; ít nhất 8 đại lý có đơn</td></tr>
+<tr><td>Visa + Fast Track</td><td>T1 khoảng 38 hồ sơ và 168 lượt Fast Track; giai đoạn nền khoảng 14 hồ sơ và 62 lượt/tháng</td></tr>
+<tr><td>Sin-Mal</td><td>Biên từ 4,5% trở lên; đoàn dưới 3% cần quản lý duyệt; ít nhất 10 đại lý có đơn</td></tr>
+<tr><td>FIT</td><td>Khách lớn nhất không quá 65% doanh thu FIT; ít nhất 8 đại lý hoạt động</td></tr></table></div>
+</div></section>
+
+<section id="nhan-su"><div class="wrap">
+<h2 class="t">Phân công 2 sale</h2>
+<div class="two">
+<div class="card"><span class="tag">Sale A</span><b>Tăng trưởng, biên cao</b><p style="margin:6px 0 0">Indonesia, Visa, Fast Track, dịch vụ lẻ. GP mục tiêu khoảng 41,5k; doanh thu khoảng 200k (16,6k/tháng).</p></div>
+<div class="card"><span class="tag">Sale B</span><b>Nền ổn định</b><p style="margin:6px 0 0">Sin-Mal FIT & Landtour, khách sạn + vé máy bay, tour trọn gói đối tác. GP mục tiêu khoảng 41,5k; doanh thu khoảng 503k (42k/tháng).</p></div></div>
+<p class="src">Hai sale có chỉ tiêu GP ngang nhau để công bằng về thu nhập. Ngưỡng doanh thu 20k áp dụng cho trung bình team, vì Sale A bán sản phẩm biên cao nên doanh thu thấp hơn nhưng GP bằng nhau.</p>
+</div></section>
+
+<section id="thu-nhap"><div class="wrap">
+<h2 class="t">Thu nhập của sale</h2>
+<p class="lead">Hoa hồng tính trên GP, không tính trên doanh thu, để sale không chạy đoàn biên thấp.</p>
+<div class="two">
+<div class="card"><span class="tag">Công thức</span><ul style="margin:6px 0 0;padding-left:18px"><li>10% GP đến hết 100% chỉ tiêu</li><li>13% GP cho phần 100–120%</li><li>16% GP cho phần trên 120%</li></ul></div>
+<div class="card"><span class="tag">Điều kiện</span><ul style="margin:6px 0 0;padding-left:18px"><li>Doanh thu team dưới 20k/sale/tháng trong quý: hoa hồng quý nhận 70%</li><li>Đoàn biên dưới ngưỡng: hoa hồng đoàn ×50%</li><li>GP team quý dưới 60% kế hoạch: hoa hồng quý ×50%</li></ul></div></div>
+<div class="tw"><table><tr><th>Mức</th><th class="n">GP team</th><th class="n">Thu nhập mỗi sale/tháng</th><th class="n">Chi phí 2 sale / GP</th><th class="n">GP còn lại cho công ty</th></tr>
+<tr><td>Sàn</td><td class="n">56,7k</td><td class="n">~18,1 triệu</td><td class="n">33,4%</td><td class="n">37,7k</td></tr>
+<tr class="hl"><td>Mục tiêu</td><td class="n">83,1k</td><td class="n">~21,0 triệu</td><td class="n">26,0%</td><td class="n">61,5k</td></tr>
+<tr><td>Vượt</td><td class="n">100k</td><td class="n">~23,4 triệu</td><td class="n">23,8%</td><td class="n">76,2k</td></tr>
+<tr><td>Bứt phá</td><td class="n">120k</td><td class="n">~26,9 triệu</td><td class="n">22,5%</td><td class="n">93,0k</td></tr></table></div>
+<p class="src">Giả định lương cứng 12 triệu/người/tháng, chi phí công ty ×1,2, tỷ giá 26.000. Cần team xác nhận.</p>
+</div></section>
+
+<section id="rui-ro"><div class="wrap">
+<h2 class="t">Rủi ro và giả định</h2>
+<div class="tw"><table><tr><th>Rủi ro</th><th>Phương án</th></tr>
+<tr><td>Mùa Indonesia yếu hơn dự kiến</td><td>Chuyển sớm nguồn lực sang Visa, Fast Track và bán chéo</td></tr>
+<tr><td>Thiếu người làm hồ sơ Mỹ, Canada</td><td>Đẩy nhanh đào tạo; tạm ưu tiên Nhật, Đài</td></tr>
+<tr><td>Phụ thuộc vài khách lớn</td><td>KPI tỷ trọng khách lớn và số đại lý hoạt động</td></tr>
+<tr><td>Chạy doanh thu bằng đoàn biên thấp</td><td>Hoa hồng theo GP, duyệt đoàn dưới ngưỡng biên</td></tr>
+<tr><td>Thay đổi chính sách visa</td><td>Theo dõi cập nhật, báo sớm cho khách</td></tr></table></div>
+<div class="note warn"><b>Giả định cần xác nhận:</b> giá bán Indonesia ~330 USD/khách và GP 45 USD/khách; phí visa ~60 USD với GP 30 USD/hồ sơ; Fast Track GP 10 USD/lượt (theo team); lương cứng 12 triệu; tỷ giá 26.000.</div>
+<p class="src">Nguồn thị trường: Tổng cục Thống kê (qua Nhân Dân, VOV), JNTO (qua VietnamNet, VOV, Dân Trí), Vietnam Report (qua Tuổi Trẻ), VietnamPlus, VnExpress. Số liệu nội bộ: tổng hợp doanh thu MET 2025 và 2026, bảng giá land tour Indonesia 2026–2027, bảng giá Fast Track 2026.</p>
+</div></section>
+</main>
+<footer><div class="wrap">MET Events & Marketing | Plan Sale MET 2027 | Tài liệu nội bộ, số liệu giả định sẽ được cập nhật theo dữ liệu vận hành thực tế</div></footer>
+
+<script>
+(function(){
+var d=[[0,6.6,42.4],[0,5.7,42.4],[0,5.7,42.4],[14.7,4.7,42.4],[26.4,2.4,42.4],[26.4,2.4,42.4],[26.4,2.4,42.4],[26.4,2.4,42.4],[14.7,2.4,42.4],[11.7,2.4,42.4],[0,4.3,42.4],[0,5.7,42.4]];
+var c=["#0A6FD6","#17D0E6","#9ED8FF"],W=720,H=260,L=36,B=28,T=10,bw=36,gap=(W-L-12*bw)/12,mx=80,h=H-B-T,s="";
+var cs=getComputedStyle(document.documentElement);
+[0,20,40,60,80].forEach(function(v){var y=T+h-(v/mx)*h;s+='<line x1="'+L+'" x2="'+W+'" y1="'+y+'" y2="'+y+'" stroke="#D3E9F9"/><text x="'+(L-6)+'" y="'+(y+4)+'" font-size="11" text-anchor="end" fill="#4D6A87">'+v+'</text>'});
+d.forEach(function(r,i){var x=L+gap/2+i*(bw+gap),y=T+h,tot=0;
+r.forEach(function(v,k){var ph=(v/mx)*h;y-=ph;tot+=v;if(ph>0)s+='<rect x="'+x+'" y="'+y+'" width="'+bw+'" height="'+ph+'" fill="'+c[k]+'"/>'});
+s+='<text x="'+(x+bw/2)+'" y="'+(y-4)+'" font-size="10.5" text-anchor="middle" fill="#0B2A4A" font-weight="600">'+Math.round(tot)+'</text><text x="'+(x+bw/2)+'" y="'+(H-8)+'" font-size="11.5" text-anchor="middle" fill="#4D6A87">T'+(i+1)+'</text>'});
+document.getElementById("bars").innerHTML=s;
+})();
+</script>
+</body>
+</html>
